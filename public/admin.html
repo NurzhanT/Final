@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="profile.html">My Profile</a>
+    <button id="logout-btn">Logout</button>
+  </nav>
+
+  <div class="container">
+    <h1>Admin Panel</h1>
+    <p id="access-denied" style="display: none; color: red; font-size: 20px;">Access Denied</p>
+    
+    <div id="admin-content" style="display: none;">
+      <h2>All Posts</h2>
+      <div id="posts-container"></div>
+    </div>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

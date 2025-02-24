@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile - My Posts</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <button id="logout-btn" style="display: none;">Logout</button>
+  </nav>
+
+  <div class="container">
+    <h1>My Profile</h1>
+
+    <!-- Post Form -->
+    <form id="post-form">
+      <input type="text" id="title" placeholder="Post Title" required>
+      <textarea id="content" placeholder="Write something..." required></textarea>
+      <button type="submit">Create Post</button>
+    </form>
+
+    <h2>My Posts</h2>
+    <div id="user-posts"></div>
+  </div>
+
+  <script src="js/posts.js"></script>
+</body>
+</html>
